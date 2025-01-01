@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const { Users } = require("../models");
 //bcrypt 是一个用于密码哈希的库
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const { where } = require("sequelize");
 const { validateToken } = require("../middlewares/AuthMiddleware");
 const { sign } = require("jsonwebtoken");
